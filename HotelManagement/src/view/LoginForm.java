@@ -147,7 +147,6 @@ public class LoginForm extends javax.swing.JFrame {
                 //Create default admin account
                 try {
                     if (!mUserBLL.getUserByName("default").next()) {
-                        System.out.println("1");
                         User defaultUser = new User("default", "123456", 123456789, 0, 0);
                         mUserBLL.insertUser(defaultUser);
                     }
